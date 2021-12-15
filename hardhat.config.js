@@ -18,4 +18,11 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
  */
 module.exports = {
   solidity: "0.8.4",
+  networks: {
+    hardhat: {
+      forking: {
+        url: "https://mainnet.infura.io/v3/d26e8ba715ae4424be5b7a36274bf263"
+      }
+    }
+  }
 };
